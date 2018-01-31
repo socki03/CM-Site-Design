@@ -1,0 +1,149 @@
+/*************************** 
+ *
+ * Template Name: Corey Mock
+ * Template Description: North Dakota House Minority Leader
+ * Template Author: Brett Wysocki
+ * Author URL: https://www.brettwysocki.com
+ *
+ ***************************/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 700; }
+
+a {
+  text-decoration: none;
+  color: #2F6690;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out; }
+  a:hover {
+    color: #F0A202; }
+
+html {
+  background-color: #F7EBEC;
+  font-family: "Lora", Times, serif;
+  font-size: 62.5%; }
+
+body {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+.inner-wrapper {
+  max-width: 1480px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px; }
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  /* many screen reader and browser combinations announce broken words as they would appear visually */
+  word-wrap: normal !important; }
+
+nav {
+  font-family: "Raleway", Arial, Helvetica, sans-serif; }
+  nav ul {
+    margin: 0;
+    list-style: none outside none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    nav ul li {
+      margin: 0;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      font-weight: bold;
+      text-transform: uppercase; }
+      nav ul li a {
+        display: block; }
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100px;
+  background-color: rgba(8, 36, 74, 0.9);
+  z-index: 1000; }
+  .site-header .site-header-inner-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+  .site-header .site-branding {
+    flex: 0 0 400px;
+    padding: 10px 0;
+    position: relative; }
+    .site-header .site-branding .logo {
+      display: block;
+      background-image: url("assets/img/svg/cm-logo-ndhml-off-white.svg");
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      .site-header .site-branding .logo:after {
+        content: '';
+        display: block;
+        padding-bottom: 20%; }
+
+.navigation-section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end; }
+  .navigation-section .upper-nav {
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
+  .navigation-section > nav {
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
+
+.upper-nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end; }
+
+.search-wrapper .search-toggle {
+  font-size: 32px;
+  font-size: 3.2rem; }
+
+.social-navigation ul {
+  justify-content: flex-end; }
+  .social-navigation ul li {
+    font-size: 32px;
+    font-size: 3.2rem; }
+
+.site-navigation ul li {
+  flex: 1 0 auto;
+  text-align: center; }
+  .site-navigation ul li a {
+    background-color: transparent;
+    color: #F7EBEC;
+    padding: 10px 1.5em;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .site-navigation ul li:hover a {
+    background-color: #2F6690; }
+
+.site-content {
+  position: relative;
+  z-index: 1;
+  min-height: 10000px; }
+
+.page-header {
+  background-image: url("assets/img/north-dakota.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .page-header .page-header-inner-wrapper:after {
+    content: '';
+    display: block;
+    padding-bottom: 66%; }
+
+/*# sourceMappingURL=style.css.map */

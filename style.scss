@@ -1,0 +1,207 @@
+/*************************** 
+ *
+ * Template Name: Corey Mock
+ * Template Description: North Dakota House Minority Leader
+ * Template Author: Brett Wysocki
+ * Author URL: https://www.brettwysocki.com
+ *
+ ***************************/
+
+@import "assets/scss/functions";
+
+// 0.0 - Globals
+	// 0.1 - Colors
+		$cm_dk_blue: #08244A;
+		$cm_md_blue: #2F6690;
+		$cm_lt_blue: #D8DBE2;
+		$cm_almost_white: #F7EBEC;
+		$cm_red: #880D1E;
+		$cm_yellow: #F0A202;
+	
+	// 0.2 - Fonts
+		$display_font_family: 'Raleway', Arial, Helvetica, sans-serif;
+		$primary_font_family: 'Lora', Times, serif;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $display_font_family;
+		font-weight: 700;
+	}
+	p, li {
+		//font-family: 
+	}
+	p {
+
+	}
+	li {
+
+	}
+	a {
+		text-decoration: none;
+		color: $cm_md_blue;
+		@include transition( color .2s ease-in-out );
+		&:hover {
+			color: $cm_yellow;
+		}
+	}
+
+	html {
+		background-color: $cm_almost_white;
+		font-family: $primary_font_family;
+		font-size: 62.5%;
+	}
+	body {
+		@include font-size( 16 );
+	}
+	.inner-wrapper {
+		max-width: 1480px;
+		margin: 0 auto;
+		position: relative;
+		padding: 0 20px;
+	}
+	.screen-reader-text {
+		clip: rect(1px, 1px, 1px, 1px);
+		height: 1px;
+		overflow: hidden;
+		position: absolute !important;
+		width: 1px;
+		/* many screen reader and browser combinations announce broken words as they would appear visually */
+		word-wrap: normal !important;
+	}
+	nav {
+		font-family: $display_font_family;
+		ul {
+			margin: 0;
+			list-style: none outside none;
+			@include flex-display();
+			flex-flow: row wrap;
+			justify-content: space-between;
+			li {
+				margin: 0;
+				@include flex( 0 0 auto );
+				font-weight: bold;
+				text-transform: uppercase;
+				a {
+					display: block;
+				}
+			}
+		}
+	}
+
+
+// 1.0 - Header
+	.site-header {
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		min-height: 100px;
+		background-color: rgba( $cm_dk_blue, .9 );
+		z-index: 1000;
+		.site-header-inner-wrapper {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+		}
+		.site-branding {
+			flex: 0 0 400px;
+			padding: 10px 0;
+			position: relative;
+			.logo {
+				display: block;
+				background-image: url('assets/img/svg/cm-logo-ndhml-off-white.svg');
+				background-position: center center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				&:after {
+					content: '';
+					display: block;
+					padding-bottom: 20%;
+				}
+			}
+		}
+	}
+
+	// 1.1 - Header Navigation
+		.navigation-section {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: flex-end;
+			.upper-nav {
+				@include flex( 0 0 100% );
+			}
+			> nav {
+				@include flex( 0 0 100% );
+			}
+		}
+		.upper-nav {
+			@include flex-display();
+			flex-flow: row nowrap;
+			justify-content: flex-end;
+		}
+		.search-wrapper {
+			.search-toggle {
+				@include font-size( 32 );
+			}
+		}
+		// 1.1.1 - Social Navigation
+			.social-navigation {
+				ul {
+					justify-content: flex-end;
+					li {
+						@include font-size( 32 );
+						a {
+
+						}
+					}
+				}
+			}
+		// 1.1.2 - Site Navigation
+			.site-navigation {
+				ul {
+					li {
+						flex: 1 0 auto;
+						text-align: center;
+						a {
+							background-color: transparent;
+							color: $cm_almost_white;
+							padding: 10px 1.5em;
+							@include transition( all .2s ease-in-out );
+						}
+						&:hover {
+							a {
+								background-color: $cm_md_blue;
+							}
+						}
+					}
+				}
+			}
+
+// 2.0 - Site Content
+	.site-content {
+		position: relative;
+		z-index: 1;
+		min-height: 10000px;
+	}
+	// 2.1 - Page Header
+		.page-header {
+			background-image: url('assets/img/north-dakota.jpg');
+			background-position: top center;
+			//background-image: url('assets/img/ag_gold.jpg');
+			//background-position: center center;
+			//background-image: url('assets/img/fire_energy.jpg');
+			//background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			.page-header-inner-wrapper {
+				&:after {
+					content: '';
+					display: block;
+					padding-bottom: 66%;
+				}
+			}
+		}
+
+// 3.0 - Site Footer
+	.site-footer {
+
+	}

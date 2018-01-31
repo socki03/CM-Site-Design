@@ -1,0 +1,86 @@
+// SCSS Mixins
+	
+	// Border Radius
+		@mixin border-radius($corners) {
+			-webkit-border-radius: 	$corners;
+			-moz-border-radius: 	$corners;
+			border-radius: 			$corners;
+		}
+	
+	// Box Shadow
+		@mixin box-shadow( $shadow ) {
+			-webkit-box-shadow: $shadow;
+			-moz-box-shadow:    $shadow;
+			box-shadow:         $shadow;
+		}
+
+	// Transition(s)
+		@mixin transition($transitions...) {
+			-webkit-transition: $transitions;
+			transition: 		$transitions;
+		}
+	
+	// Transform(S)
+		@mixin transform($transforms...) {
+			-moz-transform: 	$transforms;
+			-o-transform: 		$transforms;
+			-ms-transform: 		$transforms;
+			-webkit-transform: 	$transforms;
+			transform: 			$transforms;
+		}
+	
+	// Rotate (Specific Transform)
+		@mixin rotate ($deg) {
+			@include transform(rotate(#{$deg}deg));
+		}
+	// Scale (Specific Transform)
+		@mixin scale($scale) {
+			@include transform(scale($scale));
+		} 
+	// Transform (Specific Transform)
+		@mixin translate($x, $y) {
+			@include transform(translate($x, $y));
+		}
+
+	// Skew (Specific Transform)
+		@mixin skew ($x, $y) {
+			@include transform(skew(#{$x}deg, #{$y}deg));
+		}
+	
+	// Transform Origin
+		@mixin transform-origin ($origin) {
+			-moz-transform-origin: $origin;
+			-o-transform-origin: $origin;
+			-ms-transform-origin: $origin;
+			-webkit-transform-origin: $origin;
+			transform-origin: $origin;
+		}
+	
+	// Font Size
+		@mixin font-size( $sizeValue: 1.6 ) {
+			font-size: 	$sizeValue + px;
+			font-size: 	($sizeValue / 10) + rem;
+		}
+	
+	// Display Flex
+		@mixin flex-display() {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: flex;
+		}
+
+	// Flex
+		@mixin flex( $flex ) {
+			-webkit-flex: $flex;
+			-ms-flex: $flex;
+			flex: $flex;
+		}
+	// Stretch
+		@mixin stretch() {
+			display: block;
+			position: absolute;
+			top:    0;
+			left:   0;
+			right:  0;
+			bottom: 0;
+		}
